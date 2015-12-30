@@ -1,11 +1,11 @@
 @font-face {
-    font-family: Nexa;
-    src: url('fonts/Nexa Light.otf');
+    font-family: "Nexa";
+    src: url("fonts/Nexa Light.otf");
 }
 
 @font-face {
-    font-family: Nexa;
-    src: url('fonts/Nexa Bold.otf');
+    font-family: "Nexa";
+    src: url("fonts/Nexa Bold.otf");
 	font-weight: bold;
 }
 
@@ -13,7 +13,7 @@ body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	font-family:Nexa, sans-serif;
+	font-family:"Nexa", sans-serif;
 	cursor: context-menu;
 	font-size:16px;
 	line-height:1em;
