@@ -1,8 +1,19 @@
+@font-face {
+    font-family: Nexa;
+    src: url('fonts/Nexa Light.otf');
+}
+
+@font-face {
+    font-family: Nexa;
+    src: url('fonts/Nexa Bold.otf');
+	font-weight: bold;
+}
+
 body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	font-family:"Nexa", sans-serif;
+	font-family:Nexa, sans-serif;
 	cursor: context-menu;
 	font-size:16px;
 	line-height:1em;
@@ -51,7 +62,6 @@ h1, h2, h3, h4 {
 	float: left;
 	font-size: 2.5em;
 	margin-top: 20px;
-	font-family:"Nexa";
 }
 
 .nameLogo {
@@ -61,7 +71,6 @@ h1, h2, h3, h4 {
 	color:#000;
 	text-decoration: none;
 	font-size: 2.5em;
-	font-family:"Nexa";
 }
 
 .nameLogo hr {
