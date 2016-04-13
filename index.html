@@ -22,9 +22,18 @@
 	<script>
 		$(document).ready(
 			function() {
+				$('.modal-trigger').leanModal({
+						dismissible: true, // Modal can be dismissed by clicking outside of the modal
+						opacity: .5, // Opacity of modal background
+						in_duration: 300, // Transition in duration
+						out_duration: 200, // Transition out duration
+					}
+				);
+			
 				$('.parallax').parallax();
+				$('.materialboxed').materialbox();
         
-				$('a[href*=#]').each(
+				$('a[href*=#slide]').each(
 					function() {
 						if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
 						&& location.hostname == this.hostname
@@ -80,10 +89,13 @@
 	
 	<div id="slide1" class="parallax-container">
 		<div class="section">
-			<div class="nameLogo content">
+			<div class="nameLogo content"> <!-- style="line-height:0.6em;"> -->
 				<span>ACHMAD<span style="font-weight:bold;">MAULANA</span></span><br>
 				<span style="font-size:0.5em; letter-spacing:0.96em;">MALIKUL HAKIM</span>
 				<hr>
+				<!--<span style="font-size:1.5em; "><span style="font-weight:bold;">AYA</span>ZHAN</span><br>
+				<span style="font-size:0.75em; letter-spacing:0.38em;">KUKETAYEVA</span>
+				<hr style="width:295px;">
 				<!--<span><span style="font-weight:bold;">PAULINA</span>MARÍA</span><br>
 				<span style="font-size:0.5em; letter-spacing:0.56em;">DURÁN MIRANDA</span>
 				<hr style="width:300px;">-->
@@ -92,19 +104,21 @@
 		<div class="parallax"><img src="img/slide1-long.jpg" style="width:100%; height:auto;"></div>
 	</div>
 	
-	
-	
 	<div id="slide2">
 		<div class="content">	
 			<h1><span style="font-weight:bold;">DESIGN</span>WORKS</h1>
-			<div class="designWorkBox hvr-grow">
-				<img src="img/HowRYou.jpg" alt="HowRYou">
-				<p>HowRYou</p>
-			</div>
-			<div class="designWorkBox hvr-grow">
-				<img src="img/CV_2.png" alt="CV">
-				<p>CV Designs</p>
-			</div>
+			<a class="modal-trigger" href="#designwork1">
+				<div class="designWorkBox hvr-grow">
+					<img src="img/HowRYou.jpg" alt="HowRYou">
+					<p>HowRYou</p>
+				</div>
+			</a>
+			<a class="modal-trigger" href="#designwork2">
+				<div class="designWorkBox hvr-grow">
+					<img src="img/CV_2.png" alt="CV">
+					<p>CV Designs</p>
+				</div>
+			</a>
 			<div class="designWorkBox hvr-grow">
 				<img src="img/Newspaper_02.jpg" alt="CV">					
 				<p>Layout practice</p>
@@ -117,6 +131,40 @@
 				<img src="img/screen 02_splash.png" alt="Surevibe" style="object-position: 0 30%;">					
 				<p>Surevibe</p>
 			</div>
+			<!-- design works details -->
+			<div id="designwork1" class="modal">
+				<div class="modal-content">
+					<h4>HowRYou Bracelet</h4>
+					<p>Sometimes current social medias feel too complicated and could give ambiguity to what someone want to share.
+						<a href="http://www.arganka.com">Arganka</a>, Heikki, and I explored on how to simplify the way we share our feelings.</p>
+					<p>We came up with a concept called HowRYou bracelet. The concept consist of a wearable device that allow people to share
+						their feeling in a very basic way, happy or not happy. The other part of the concept is a software where user can see how other persons are doing.
+						With aimed to make people share their feelings more often to the persons the love by simplify the way to tell their feelings.
+					</p>
+					<img src="img/designworks/howryou/paper_bracelet.jpg">
+					<p>In this project, I worked on the ideation phase together with my team mates, the design of the bracelet, and the UI of the software.
+					</p>
+					<img src="img/designworks/howryou/HowRYou.jpg" >
+					<img src="img/designworks/howryou/screen 1.jpg" >
+				</div>
+				<div class="modal-footer">
+					<a href="#!" class=" modal-action modal-close btn-flat">close</a>
+				</div>
+			</div>
+			<div id="designwork2" class="modal">
+				<div class="modal-content">
+					<h4>CV Designs</h4>
+					<p>As part of job hunting, I created some infographic-like CV designs to showcase my design skill :)</p>
+					
+					<img src="img/designworks/cvdesigns/CV Achmad Maulana 2015 - 1.png"><br>
+					<img src="img/designworks/cvdesigns/CV Achmad Maulana 2015 - 4.png"><br>
+					<img src="img/designworks/cvdesigns/CV Achmad Maulana 2015 - 5.png">
+				</div>
+				<div class="modal-footer">
+					<a href="#!" class=" modal-action modal-close btn-flat">close</a>
+				</div>
+			</div>
+			
 		</div>
 	</div>
 	
