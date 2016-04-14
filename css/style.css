@@ -193,12 +193,19 @@ nav {
 .drawingBox {
 	width:880px;	
 	height: 495px;
+	background-color:#000;
 }
 
 .drawingBox img {
-	width: 100%;
+	width: auto;
+	height:100%;
 	object-fit: cover;
 	object-position: 0 0;
+	margin: 0 auto;
+}
+
+.btn {
+	text-transform:none;
 }
 
 /*----------------------------*/
