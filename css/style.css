@@ -57,21 +57,22 @@ h1, h2, h3, h4 {
 	background-color:rgba(255,255,255,0.50);
 }
 
-#logo a {
-	color: #22140e;
-	text-decoration: none;
+#logo {
 	float: left;
-	font-size: 2.5em;
-	margin-top: 20px;
+	margin-top: 6px;
+	margin-left: 60px;
 }
 
 .nameLogo {
 	line-height:0.4em;
 	/*color: #22140e;
 	/*color:#fff;*/
-	color:#000;
+	color:#4b1f1f;
 	text-decoration: none;
 	font-size: 2.5em;
+	margin: 0 auto;	
+	width: 400px;	
+	margin-top:54px;
 }
 
 .nameLogo hr {
@@ -79,6 +80,7 @@ h1, h2, h3, h4 {
 	text-align:left;
 	margin-left:0; 
 	margin-top:3px;
+	margin-bottom:12px;
 	height:1px;
 	border-width:0;
 	color:#000;
